@@ -182,7 +182,7 @@ header .container:last-child .text p {
   line-height: 1.6;
   color: #555;
 }
-header .container:last-child .text a {
+.Link {
   background-color: var(--main-color);
   display: block;
   color: white;
@@ -199,11 +199,11 @@ header .container:last-child .text a {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-header .container:last-child .text a:hover {
+.Link:hover {
   color: var(--main-color);
   background-color: transparent;
 }
-header .container:last-child .text a span {
+.Link span {
   position: absolute;
   right: 20px;
   top: 7px;
@@ -226,12 +226,12 @@ header .container:last-child .text a span {
     width: fit-content;
     font-size: 35px;
   }
-  header .container:last-child .text a {
+  .Link {
     padding: 10px 23px;
     width: 180px;
     margin: 30px auto 10px;
   }
-  header .container:last-child .text a span {
+  .Link span {
     right: 21px;
     top: 5px;
   }
@@ -247,7 +247,7 @@ header .container:last-child .text a span {
     margin: 0 auto;
     text-align: center;
   }
-  header .container:last-child .text a {
+  .Link {
     font-size: 16px;
   }
 }
@@ -413,3 +413,150 @@ header .container:last-child .text a span {
   }
 }
 /* End Products */
+/* Start Exclusive */
+.exclusive {
+  background: radial-gradient(#fff, #ffd6d6);
+  width: 100%;
+  padding: 50px 0;
+}
+.exclusive .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.exclusive .container .image img {
+  width: 300px;
+}
+.exclusive .container .content {
+  max-width: 700px;
+  margin-left: 50px;
+}
+.exclusive .container .content h1 {
+  font-size: 35px;
+}
+.exclusive .container .content p:nth-child(3) {
+  line-height: 1.6;
+}
+.exclusive .container .content .Link {
+  width: 150px;
+  padding: 11px 23px;
+  font-size: 16px;
+}
+.exclusive .container .content .Link span {
+  right: 20px;
+  top: 6px;
+}
+@media (max-width: 1200px) {
+  .exclusive .container .content {
+    margin: 50px auto;
+    text-align: center;
+  }
+  .exclusive .container .content .Link {
+    text-align: start;
+    margin: 30px auto 0;
+  }
+}
+/* End Exclusive */
+/* Start Testimonials */
+.testimonial {
+  padding: 50px 0;
+}
+.testimonial .container .testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  place-items: center;
+}
+.testimonial .container .testimonials .test {
+  width: 350px;
+  box-shadow: 0 0 20px 0px #d8d8d8;
+  padding: 110px 20px 30px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.testimonial .container .testimonials .test:hover {
+  box-shadow: none;
+}
+.testimonial .container .testimonials .test:hover img {
+  box-shadow: 0 0 0 700px var(--main-color);
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+}
+@media (max-width: 992px) {
+  .testimonial .container .testimonials .test {
+    width: 300px;
+  }
+  .testimonial .container .testimonials {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.testimonial .container .testimonials .test::before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  color: var(--main-color);
+  font-size: 40px;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.testimonial .container .testimonials .test p {
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 15px;
+}
+.testimonial .container .testimonials .test .stars i {
+  color: var(--main-color);
+}
+.testimonial .container .testimonials .test h3 {
+  color: #555;
+  font-weight: 600;
+}
+.testimonial .container .testimonials .test img {
+  width: 50px;
+  height: 50px;
+  margin: 15px auto 10px;
+  transition: 0.5s;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.testimonial .test:hover h3,
+.testimonial .test:hover .stars i,
+.testimonial .test:hover p,
+.testimonial .test:hover::before {
+  color: white !important;
+  position: relative;
+  z-index: 200;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.testimonial .test:hover::before {
+  position: absolute;
+  color: white !important;
+}
+/* End Testimonials */
