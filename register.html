@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Red store Web Design" />
+    <!-- Makes All Elements Render Normally -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Red Store | Template 6</title>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="logo" class="logo"
+        /></a>
+        <nav>
+          <input type="checkbox" id="bars" />
+          <label for="bars"><i class="far fa-bars menu"></i></label>
+          <a href="#"><i class="far fa-shopping-cart card"></i></a>
+          <ul class="navbar">
+            <li><a href="register.html">Account</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="products.html">Product</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="images/image1.png" />
+        </div>
+        <form action="index.html">
+          <div>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="active">Register</a>
+          </div>
+          <input
+            type="text"
+            name="User"
+            placeholder="Username"
+            required
+            autofocus
+          />
+          <input type="email" name="Mail" placeholder="E-mail" required />
+          <input
+            type="password"
+            name="Password"
+            placeholder="Password"
+            required
+          />
+          <input type="submit" value="Register" />
+        </form>
+      </div>
+    </header>
+    <!-- End Header -->
+  </body>
+</html>
