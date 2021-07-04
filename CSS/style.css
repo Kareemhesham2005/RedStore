@@ -365,6 +365,7 @@ header .container:last-child .text p {
 }
 .parent .container .products-1 .pro,
 .parent .container .products-2 .pro {
+  position: relative;
   cursor: pointer;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -400,6 +401,15 @@ header .container:last-child .text p {
 .parent .container .products-1 .pro p,
 .parent .container .products-2 .pro p {
   color: #555;
+}
+.parent .container .products-1 .pro a div,
+.parent .container .products-2 .pro a div {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 @media (max-width: 530px) {
   .parent .container .products-1,
