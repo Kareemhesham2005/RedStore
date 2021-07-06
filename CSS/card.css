@@ -207,6 +207,7 @@ header .container nav input {
   margin-top: 10px;
   height: 125px;
 }
+
 .card .container .content .products .product .left > div .text h3,
 .card .container .content .products .product .left > div .text h4,
 .card .container .content .products .product .left > div .text a {
@@ -231,6 +232,9 @@ header .container nav input {
   .card .container .content .products .product .center,
   .card .container .content .products .product .right {
     height: 630px;
+  }
+  .card .container .content .products .product .left > div .text {
+    margin-left: 0;
   }
 }
 .card .container .content .products .checkout-parent {
